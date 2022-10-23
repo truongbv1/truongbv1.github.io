@@ -38,6 +38,7 @@ input[type=text] {
 
 input[type=text]:focus {
   background-color: pink;
+  touch-action: manipulation;
 }
 
 .btn_login {
