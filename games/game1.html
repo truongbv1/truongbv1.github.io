@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
 <style>
 canvas {
     border:1px solid #d3d3d3;
@@ -14,7 +14,7 @@ canvas {
     position:absolute;
     bottom: 100px;
     border-radius: 50px;
-    touch-action: manipulation;
+    touch-action: manipulation;  
 }
 
 </style>
@@ -31,17 +31,25 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "orange", 10, 120);
+    var myGamePiece_w = Math.floor(0.0625*window.innerWidth);
+    var myGamePiece_h = Math.floor(0.041*window.innerHeight);
+
+    myGamePiece = new component(myGamePiece_h, myGamePiece_h, "orange", 10, 120);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("20px", "Consolas", "black", 10, 40, "text");
     myGameArea.start();
 }
 
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 480;
-        this.canvas.height = 270;
+        // this.canvas.width = 480;
+        // this.canvas.height = 270;
+        this.canvas.width = Math.floor(0.3*window.innerWidth);
+        this.canvas.height = Math.floor(0.3*window.innerHeight);
+        if(this.canvas.width < 384) this.canvas.width = 384;
+        if(this.canvas.height < 240) this.canvas.height = 240;
+
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
