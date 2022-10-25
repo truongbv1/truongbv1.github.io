@@ -61,25 +61,39 @@ input[type=text]:focus {
   text-decoration: none;
   display: inline-block;
   padding: 5px 5px;
-  /* border: 1px solid #555; */
-  border-radius: 50px;
+  border-radius: 10px;
+  margin: 0px 5px;
 }
 
 .backtohome a{
   text-decoration: none;
+  color: pink;
+  font-family: 'Signika', sans-serif;
 }
 
 
-.continue {
+.btn_right {
 	float: right;
 } 
 
-.continue button{
-  color: black;
+.btn_right button{
+  border-color: pink;
+  text-transform: uppercase;
+  font-family: 'Signika', sans-serif;
+  color: pink;
   background-color: white;
-  border: 0;
+  float: right;
+  border: 1;
+  border-radius: 10px;
+  /* padding: 5px 5px; */
+  margin: 2px 2px;
+  font-size: 14px;
+  height: 25px;
 }
 
-.continue button:hover{
-  color: pink;
+.btn_right button:hover{
+  /* color: pink; */
+  border-color: #fff;
+	color: white;
+	background-color: pink;
 }

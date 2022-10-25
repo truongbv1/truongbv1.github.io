@@ -1,5 +1,5 @@
 var w = c.width = window.innerWidth,
-    h = c.height = window.innerHeight,
+    h = c.height = window.innerHeight - 30,
     ctx = c.getContext( '2d' ),
     
     hw = w / 2, // half-width

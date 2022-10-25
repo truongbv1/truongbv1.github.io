@@ -22,14 +22,17 @@ function hidenFunction() {
     document.getElementById("login_text").value = "";
 }
 
-function continueFunction() {
+// function btn_comein() {
 
-  var cv = document.getElementById("window_canvas");
-  cv.style.display = "none";
+//   var cv = document.getElementById("window_canvas");
+//   cv.style.display = "none";
 
-  var btn = document.getElementById("btn_ctn");
-  btn.style.display = "none";
-}
+//   var btn = document.getElementById("come_in");
+//   btn.style.display = "none";
+
+//   var room = document.getElementById("room_frame2");
+//   room.style.display = "block";
+// }
 
 // MD5 function
 !function(n){
