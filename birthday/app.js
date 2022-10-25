@@ -3,17 +3,16 @@ function hidenFunction() {
     var login = document.getElementById("login");
     var text_loggin = document.getElementById("login_text").value;
     var hash = md5(text_loggin);
-    // var cv = document.getElementById("canv");
     
-    // if (hash === "fa47bb06f6ea83e49cc70cd2a130f1dc") {
-    if (text_loggin === "truongbv") {
+    // fa47bb06f6ea83e49cc70cd2a130f1dc 
+    if (hash === "0854a1663e69114ad6096c8f51cc6d7c") {
+    // if (text_loggin === "truongbv") {
         if (main.style.display === "none") {
             main.style.display = "block";
             login.style.display = "none";
-            // main.style.background-color = "black";
+
             init_frame_1();
             frame_1();
-            // exit_frame_1();
         } else {
             main.style.display = "none";
         }
@@ -21,18 +20,6 @@ function hidenFunction() {
 
     document.getElementById("login_text").value = "";
 }
-
-// function btn_comein() {
-
-//   var cv = document.getElementById("window_canvas");
-//   cv.style.display = "none";
-
-//   var btn = document.getElementById("come_in");
-//   btn.style.display = "none";
-
-//   var room = document.getElementById("room_frame2");
-//   room.style.display = "block";
-// }
 
 // MD5 function
 !function(n){

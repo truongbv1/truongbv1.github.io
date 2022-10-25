@@ -6,8 +6,8 @@ var w = c.width = window.innerWidth,
     hh = h / 2,
     
     opts = {
-        strings: [ 'HAPPY', 'BIRTHDAY', 'HÀPHƯỢNG!' ],
-        charSize: 30,
+        strings: [ 'Happy', 'Birthday', 'HàPhượng!' ],
+        charSize: 35,
         charSpacing: 35,
         lineHeight: 40,
         
@@ -55,7 +55,7 @@ var w = c.width = window.innerWidth,
     
     letters = [];
 
-ctx.font = opts.charSize + 'px Lucida Handwriting';
+ctx.font = opts.charSize + 'px GG_Robert_Leuschke';
 
 
 function Letter( char, x, y ){
@@ -371,26 +371,6 @@ function frame_1(){
 	}
 	
 	ctx.translate( -hw, -hh );
-	
-	// //loop
-	// if( done ) for( var l = 0; l < letters.length; ++l ) letters[ l ].reset();
-
-	// ctx.fillRect(205,72,32,32);
-	// ctx.fillStyle = 'white';
-	// ctx.beginPath();
-	// ctx.rect(hw, h-50, 30, 30); 
-	// // ctx.fillText('Home', 0, 0)
-	// // ctx.fillStyle = '#FFFFFF'; 
-	// // ctx.fillStyle = 'white';
-	// // ctx.fillRect(25,72,32,32);
-	// // ctx.fill(); 
-	// ctx.lineWidth = 2;
-	// ctx.strokeStyle = '#000000'; 
-	// ctx.stroke();
-	// ctx.closePath();
-	// ctx.font = '40pt Kremlin Pro Web';
-	// ctx.fillStyle = 'pink';
-	// ctx.fillText('Start', hw, hh)
 
 	return done;
 }
@@ -405,12 +385,6 @@ function init_frame_1(){
 	}
 }
 
-// anim();
-
-// function exit_frame_1(){
-// 	c.removeAttribute("hidden");
-// }
-
 window.addEventListener( 'resize', 
 	function(){
 	
@@ -420,13 +394,6 @@ window.addEventListener( 'resize',
 		hw = w / 2;
 		hh = h / 2;
 		
-		ctx.font = opts.charSize + 'px Lucida Handwriting';
+		ctx.font = opts.charSize + 'px GG_Robert_Leuschke';
 	}
 )
-
-// function continueFunction() {
-
-//     var cv = document.getElementById("window_canvas");
-// 	cv.style.display = "none";
-// }
-

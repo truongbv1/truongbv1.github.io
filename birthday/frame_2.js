@@ -4,9 +4,9 @@ $(window).load(function(){
 });
 $('document').ready(function(){
 		var vw;
-		var d_w = 50;
+		var d_w = 35;
 		$(window).resize(function(){
-			vw = $(window).width()/2;
+			vw = $(window).width()/2-30;
 			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8').stop();
 			$('#b11').animate({top:240, left: vw-d_w*4},500);
 			$('#b22').animate({top:260, left: vw-d_w*3},500);
@@ -173,7 +173,7 @@ $('document').ready(function(){
 
 		
 	$('#wish_message').click(function(){
-		vw = $(window).width()/2;
+		vw = $(window).width()/2-30;
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8').stop();
 		$('#b1').attr('id','b11');
@@ -229,8 +229,3 @@ $('document').ready(function(){
 		
 	});
 });
-
-
-
-
-//alert('hello');

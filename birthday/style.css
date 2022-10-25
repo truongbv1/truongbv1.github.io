@@ -85,15 +85,20 @@ input[type=text]:focus {
   float: right;
   border: 1;
   border-radius: 10px;
-  /* padding: 5px 5px; */
   margin: 2px 2px;
   font-size: 14px;
   height: 25px;
 }
 
 .btn_right button:hover{
-  /* color: pink; */
   border-color: #fff;
 	color: white;
 	background-color: pink;
+}
+
+@font-face {
+  font-family: 'GG_Robert_Leuschke';
+  font-style: Asia;
+  font-weight: 400;
+  src:url('tools/IslandMoments-Regular.ttf');
 }
